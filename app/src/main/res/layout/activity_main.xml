@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:coverflow="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/stations"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/actionbar"
+        android:orientation="vertical">
+
+        <it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow
+            android:id="@+id/coverflow"
+            coverflow.spacing="0.6"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            coverflow:coverHeight="@dimen/cover_height"
+            coverflow:coverWidth="@dimen/cover_width"
+            coverflow:maxScaleFactor="2.5"
+            coverflow:reflectionGap="0px"
+            coverflow:rotationThreshold="0.5"
+            coverflow:scalingThreshold="0.5">
+
+        </it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+
+        <TextSwitcher
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp" />
+
+        <SeekBar
+            android:id="@+id/volumeBar"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btn_play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:baselineAlignBottom="true"
+            android:src="@drawable/btn_play"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Tune FM</string>
+    <string name="mosaiquefm">Mosaique FM</string>
+    <string name="ifm">IFM</string>
+    <string name="capfm">Cap FM</string>
+    <string name="radiotunisienne">Radio Tunisienne</string>
+    <string name="shemsfm">Shems FM</string>
+    <string name="zitounafm">Zitouna FM</string>
+    <string name="oasisfm">Oasis FM</string>
+    <string name="expressfm">Express FM</string>
+    <string name="sabrafm">Sabra FM</string>
+    <string name="jawharafm">Jawhara FM</string>
+
+</resources>
